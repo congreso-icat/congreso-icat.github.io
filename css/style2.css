@@ -4,6 +4,58 @@ body {
   background-color: #ffffff;
 }
 
+.container-fluid ul {
+  font-size: 0;
+  list-style-type: none;
+}
+.container-fluid ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  display: inline-block;
+  padding: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+.container-fluid ul li ul {
+  display: none;
+}
+.container-fluid ul li:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+.container-fluid ul li:hover ul {
+  display: block;
+  margin-top: 15px;
+  width: 260px;
+  left: -40px;
+  position: absolute;
+}
+.container-fluid ul li:hover ul li {
+  display: block;
+  background-color: #e7e7e7;
+}
+.container-fluid ul li:hover ul li span {
+  float: right;
+  color: #f9f9f9;
+  background-color: #F03861;
+  padding: 2px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+.container-fluid ul li:hover ul li:hover {
+  background-color: #e0e0e0;
+}
+.container-fluid ul li:hover ul li:hover span {
+  background-color: #ee204e;
+}
+
+
+
+
+
 .layout_padding {
   padding: 75px 0;
 }
@@ -135,7 +187,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 30px;
+  width: 100px;
   margin-right: 5px;
 }
 
